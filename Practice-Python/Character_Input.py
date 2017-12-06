@@ -1,5 +1,3 @@
-#Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
-
 while True:
   print("Please Enter your age", end = '')
   age = input()
@@ -12,5 +10,10 @@ if age < 50:
   phrase = "That's a long way more!"
 else:
   phrase = "That's quite soon lel"
-  
-print("You will be 100 in " + str((100-int(age))) + " years. That will be in " + str(2117-age) + " ! " + phrase)
+
+sentence = "You will be 100 in " + str((100-int(age))) + " years. That will be in " + str(2117-age) + " ! " + phrase
+print(sentence, end = "\n\n")
+
+print("Multiply this Phrase!! Key in the number of times to do so : ", end = " ")
+multiple = int(input())
+print((sentence + "\n")*multiple)
